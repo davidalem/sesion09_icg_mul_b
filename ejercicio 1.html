@@ -1,0 +1,20 @@
+<canvas id='tablero' width=500 height=450></canvas>
+<script>
+   function recorte(arr){
+ctx.beginPath();
+ctx.moveTo(arr[0],arr[1]);
+for(var i = 2;i<arr.length;i+=2)
+     ctx.lineTo(arr[i],arr[i+1]);
+ctx.clip();
+
+}
+   
+   var c=document.getElementById('tablero')
+   var ctx=c.getContext('2d')
+
+   var[rojo, azul, verde] = ['rgba(237,28,36)','rgba(0,162,232)','rgba(181,230,29)'];
+   var recVerde = [18,234,362,234,362,275,18,275],penAzul=[316,308,316,12,355,12,355,308];
+
+
+
+</script>
